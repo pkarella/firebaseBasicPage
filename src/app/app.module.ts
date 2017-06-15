@@ -17,7 +17,7 @@ import { AnswersComponent } from './answers/answers.component';
 const appRoutes: Routes = [
   {path: '', component:AnswersComponent },
   {path: 'add-answer', component: AddAnswerComponent},
-  {path: 'answers/:id', component: AddAnswerComponent}
+  {path: 'answers/:id', component: AnswerComponent}
 ];
 
 @NgModule({

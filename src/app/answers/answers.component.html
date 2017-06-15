@@ -1,3 +1,3 @@
 <ul>
-  <li *ngFor="let answer of answers | async">{{answer.name}}</li>
+  <li *ngFor="let answer of answers | async" ><a [routerLink]="['/answers/'+ answer.$key]">{{answer.name}}</a></li>
 </ul>

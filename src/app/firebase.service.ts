@@ -12,4 +12,8 @@ export class FirebaseService {
   getAnswers() {
     return this.answers;
   }
+
+  getAnswerById(id) {
+    return this.database.object('/answers/' + id)
+  }
 }
